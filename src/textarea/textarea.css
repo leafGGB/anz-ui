@@ -1,0 +1,15 @@
+.ctextarea textarea {
+  min-width: 500px;
+  min-height: 150px;
+  resize: none;
+  padding: 10px;
+  background-color: #e5e7eb;
+  border-radius: 6px;
+}
+.ctextarea :hover.hv {
+  background-color: #d1d5db;
+}
+
+:hover.disabled {
+  cursor: no-drop;
+}

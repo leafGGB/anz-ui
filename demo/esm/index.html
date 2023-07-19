@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Demo</h1>
+    <div id="app"></div>
+    <script type="module">
+      import { createApp } from "vue/dist/vue.esm-bundler.js";
+      import "../../dist/entry.css";
+      import AnZUI, {
+        SFCButton,
+        JSXButton,
+        anzButton,
+      } from "../../dist/anz-ui.mjs";
+
+      createApp({
+        template: `
+      <anz-button round>dd</anz-button>
+      <anz-button color="blue">主要按钮</anz-button>
+      <anz-button color="yellow" plain>警告按钮</anz-button>
+      <anz-button round plain icon="search">搜索</anz-button>
+
+      <JSXButton/>
+      <SFCButton/>
+    `,
+      })
+        .use(AnZUI)
+        .mount("#app");
+    </script>
+  </body>
+</html>

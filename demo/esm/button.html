@@ -1,0 +1,22 @@
+<h1>Demo2</h1>
+<div id="app"></div>
+<script type="module">
+  import { createApp } from "vue/dist/vue.esm-bundler.js";
+  import AnZUI, {
+    SFCButton,
+    JSXButton,
+    anzButton,
+  } from "../../dist/anz-ui.mjs";
+
+  createApp({
+    template: `
+<anz-button/>
+<JSXButton/>
+<SFCButton/>
+`,
+  })
+    .component(SFCButton.name, SFCButton)
+    .component(JSXButton.name, JSXButton)
+    .component(anzButton.name, anzButton)
+    .mount("#app");
+</script>

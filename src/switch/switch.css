@@ -1,0 +1,161 @@
+.switch {
+  cursor: pointer;
+}
+/* .switch.disabled {
+  cursor: no-drop;
+} */
+
+.switch.small {
+  width: 46px;
+  height: 20px;
+  position: relative;
+  border: 1px solid #dfdfdf;
+  background-color: #dcdfe6;
+  box-shadow: #dfdfdf 0 0 0 0 inset;
+  border-radius: 20px;
+  background-clip: content-box;
+  display: inline-block;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  user-select: none;
+  outline: none;
+}
+
+.switch.medium {
+  width: 57px;
+  height: 28px;
+  position: relative;
+  border: 1px solid #dfdfdf;
+  background-color: #dcdfe6;
+  box-shadow: #dfdfdf 0 0 0 0 inset;
+  border-radius: 20px;
+  background-clip: content-box;
+  display: inline-block;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  user-select: none;
+  outline: none;
+}
+
+.switch.large {
+  width: 67px;
+  height: 36px;
+  position: relative;
+  border: 1px solid #dfdfdf;
+  background-color: #dcdfe6;
+  box-shadow: #dfdfdf 0 0 0 0 inset;
+  border-radius: 20px;
+  background-clip: content-box;
+  display: inline-block;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  user-select: none;
+  outline: none;
+}
+
+.switch.small::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background-color: #f4f5fa;
+  border-radius: 50%;
+  left: 2px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  transition: 0.3s;
+}
+
+.switch.medium::before {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  background-color: #f4f5fa;
+  border-radius: 50%;
+  left: 2px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  transition: 0.3s;
+}
+
+.switch.large::before {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background-color: #f4f5fa;
+  border-radius: 50%;
+  left: 2px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  transition: 0.3s;
+}
+
+.switch:checked {
+  background-color: #4ca5fe;
+  transition: 0.6s;
+  opacity: 0.8;
+}
+
+.switch.red:checked {
+  background-color: red;
+  opacity: 0.6;
+}
+.switch.green:checked {
+  background-color: #32cd32;
+  opacity: 0.6;
+}
+.switch.wathet:checked {
+  background-color: #c0d9d9;
+}
+.switch.RainyAshville:checked {
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+.switch.SunnyMorning:checked {
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+}
+.switch.DustyGrass:checked {
+  background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+}
+.switch.MorpheusDen:checked {
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+.switch.ItmeoBranding:checked {
+  background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
+}
+.switch.StarWine:checked {
+  background-image: linear-gradient(
+    to right,
+    #b8cbb8 0%,
+    #b8cbb8 0%,
+    #b465da 0%,
+    #cf6cc9 33%,
+    #ee609c 66%,
+    #ee609c 100%
+  );
+}
+.switch.ShyRainbow:checked {
+  background-image: linear-gradient(
+    to right,
+    #eea2a2 0%,
+    #bbc1bf 19%,
+    #57c6e1 42%,
+    #b49fda 79%,
+    #7ac5d8 100%
+  );
+}
+.switch.NewYork:checked {
+  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+}
+
+.switch:checked::before {
+  left: 30px;
+  transition: 0.3s;
+}
